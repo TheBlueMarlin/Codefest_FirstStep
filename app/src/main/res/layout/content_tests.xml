@@ -10,6 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.hilla_000.firststep.TestsActivity"
-    tools:showIn="@layout/activity_tests">
+    tools:showIn="@layout/avatar_layout">
 
 </RelativeLayout>

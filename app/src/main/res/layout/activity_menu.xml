@@ -11,7 +11,7 @@
         android:text="Lessons"
         android:id="@+id/btn_goto_lesson"
         android:layout_gravity="center_horizontal"
-        android:onClick="btn_goto_lesson_onClick" />
+        android:onClick="select_learn_play_avatar" />
 
     <Button
         android:layout_width="wrap_content"
@@ -19,7 +19,7 @@
         android:text="Tests"
         android:id="@+id/btn_goto_tests"
         android:layout_gravity="center_horizontal"
-        android:onClick="btn_goto_tests_onClick" />
+        android:onClick="select_learn_play_avatar" />
 
     <Button
         android:layout_width="wrap_content"
@@ -27,7 +27,7 @@
         android:text="Games"
         android:id="@+id/btn_goto_games"
         android:layout_gravity="center_horizontal"
-        android:onClick="btn_goto_games_onClick" />
+        android:onClick="select_learn_play_avatar" />
 
 
 </LinearLayout>

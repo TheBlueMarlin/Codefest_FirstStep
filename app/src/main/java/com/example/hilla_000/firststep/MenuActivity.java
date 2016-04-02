@@ -20,16 +20,9 @@ public class MenuActivity extends MasterActivity {
         setSupportActionBar(toolbar);
     }
 
-    public void btn_goto_lesson_onClick(View view) {
-        startActivity(new Intent(getApplicationContext(), LessonActivity.class));
+    public void select_learn_play_avatar(View view) {
+
     }
 
-    public void btn_goto_tests_onClick(View view) {
-        startActivity(new Intent(getApplicationContext(), TestsActivity.class));
-    }
-
-    public void btn_goto_games_onClick(View view) {
-        startActivity(new Intent(getApplicationContext(), GamesActivity.class));
-    }
 }
 
