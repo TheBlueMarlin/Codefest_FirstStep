@@ -25,6 +25,18 @@
         <activity
             android:name=".MasterActivity"
             android:label="@string/title_activity_master"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LessonActivity"
+            android:label="@string/title_activity_lesson"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GamesActivity"
+            android:label="@string/title_activity_games"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TestsActivity"
+            android:label="@string/title_activity_tests"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

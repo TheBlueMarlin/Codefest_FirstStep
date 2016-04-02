@@ -6,4 +6,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_master">MasterActivity</string>
+    <string name="title_activity_lesson">LessonActivity</string>
+    <string name="title_activity_games">GamesActivity</string>
+    <string name="title_activity_tests">TestsActivity</string>
 </resources>
