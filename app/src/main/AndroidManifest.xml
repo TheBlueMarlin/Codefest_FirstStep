@@ -18,6 +18,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MasterActivity"
+            android:label="@string/title_activity_master"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LearnPlayActivity" />
+        <activity android:name=".SelectionActivity" />
+        <activity android:name=".AvatarActivity" />
+        <activity android:name=".LessonsActivity" />
+        <activity android:name=".MatchingActivity" />
+        <activity android:name=".BananaGameActivity"></activity>
     </application>
 
 </manifest>
