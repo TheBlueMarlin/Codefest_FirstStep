@@ -85,10 +85,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         public void onTick(long millisUntilFinished){
-            int progress = (int)(millisUntilFinished/100);
+            int progress = (int)((duration - millisUntilFinished)/100);
             loadingBar.setProgress(progress);
         }
-
     }
 
     //TODO: code to display lightbulb image
