@@ -28,10 +28,12 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ChoosePlayCat"
-            android:label="Learn and Play" />
+            android:label="Learn and Play"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SelectLearnLevel"
-            android:label="Selection" />
+            android:label="Selection"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ChooseCharacter" />
         <activity android:name=".ChooseLearnCat" />
         <activity android:name=".Game_Matching" />
