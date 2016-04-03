@@ -50,9 +50,12 @@
         <activity
             android:name=".ChooseCharacter"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ChooseLearnCat" />
-        <activity android:name=".Game_Matching" />
-        <activity android:name=".Game_Banana" />
+        <activity android:name=".ChooseLearnCat"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Game_Matching"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Game_Banana"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
         <service
             android:name=".AppAudio"
