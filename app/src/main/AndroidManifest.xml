@@ -67,7 +67,14 @@
         <activity android:name=".Game_Matching"
             android:screenOrientation="portrait"/>
         <activity android:name=".Game_Banana"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Game_Asteroid"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Game_Asteroid_Level2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
         <service
             android:name=".AppAudio"
