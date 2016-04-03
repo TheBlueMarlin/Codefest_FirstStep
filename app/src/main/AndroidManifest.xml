@@ -33,7 +33,7 @@
         <activity android:name=".ChooseCharacter" />
         <activity android:name=".ChooseLearnCat" />
         <activity android:name=".Game_Matching" />
-        <activity android:name=".Game_Banana"></activity>
+        <activity android:name=".Game_Banana" />
     </application>
 
 </manifest>
