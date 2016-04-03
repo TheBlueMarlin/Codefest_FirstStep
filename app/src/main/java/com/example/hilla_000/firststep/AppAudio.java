@@ -20,14 +20,13 @@ public class AppAudio extends Service {
     public void onCreate() {
         super.onCreate();
         player = MediaPlayer.create(this, R.raw.maintheme); //TODO: Bind audio file here
-        player.setLooping(true); //set looping
         player.setVolume(100, 100);
         player.start();
         player.setLooping(true);
     }
 
     public void onDestroy(){
-        player.start();
+        player.stop();
     }
 
     public void onPause(){
