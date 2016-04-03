@@ -27,7 +27,7 @@
             android:id="@+id/imageButton_les"
             android:layout_row="0"
             android:layout_column="0"
-            android:src="@drawable/less_four"
+            android:src="@drawable/icon_alpha"
             android:background="@null"
             android:onClick="sendMessage" />
 
@@ -38,7 +38,7 @@
             android:layout_row="0"
             android:layout_column="1"
             android:background="@null"
-            android:src="@drawable/less_one" />
+            android:src="@drawable/icon_num" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -47,7 +47,7 @@
             android:layout_row="1"
             android:layout_column="0"
             android:background="@null"
-            android:src="@drawable/less_three" />
+            android:src="@drawable/icon_shapes" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -56,7 +56,7 @@
             android:layout_row="1"
             android:layout_column="1"
             android:background="@null"
-            android:src="@drawable/less_two" />
+            android:src="@drawable/icon_colors" />
     </GridLayout>
 
 </RelativeLayout>
