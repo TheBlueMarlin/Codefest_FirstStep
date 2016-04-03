@@ -7,7 +7,9 @@ import android.os.IBinder;
 
 public class AppAudio extends Service {
 
-    private MediaPlayer player = new MediaPlayer();
+    public static MediaPlayer player = new MediaPlayer();
+
+    private boolean pause = false;
 
     public AppAudio() {
     }
@@ -23,8 +25,10 @@ public class AppAudio extends Service {
         //player.setLooping(true); //set looping
         player.setVolume(100, 100);
         player.start();
+        pause = false;
         player.setLooping(true);
     }
+
 
     public void onDestroy(){
         player.stop();

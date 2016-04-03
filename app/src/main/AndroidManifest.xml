@@ -50,15 +50,24 @@
         <activity
             android:name=".ChooseCharacter"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ChooseLearnCat"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ChooseLearnCat"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Game_Matching" />
         <activity android:name=".Game_Banana" />
 
         <service
             android:name=".AppAudio"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
+
+        <activity
+            android:name=".SubMenuActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProgressReport"
+            android:label="@string/title_activity_progress_report"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

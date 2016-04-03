@@ -90,10 +90,9 @@ public class MainMenuActivity extends SettingsMenuActivity {
         AppWideAudio.start(this, R.raw.maintheme);
     }
 
-    /***    NEEDS TO BE COMPLETED ****/
-    /***                   This is for the OPTIONS BUTTON top right of main menu
+    // TODO: get the options button working:
     public void setOptionsButtonListener(){
-        ImageButton button_char = (ImageButton) findViewById(R.id.PUT XML HERE);
+        ImageButton button_char = (ImageButton) findViewById(R.id.menuButton);
         if (button_char != null) {
             button_char.setOnClickListener(
                     new View.OnClickListener(){
@@ -101,7 +100,7 @@ public class MainMenuActivity extends SettingsMenuActivity {
                         public void onClick(View v){
                             chooseSound();
                             mainPlayer.start();
-                            Intent intent = new Intent(getApplicationContext(), PUT CLASS HERE);
+                            Intent intent = new Intent(getApplicationContext(), SubMenuActivity.class);
                             startActivity(intent);
                         }
                     }
@@ -109,8 +108,8 @@ public class MainMenuActivity extends SettingsMenuActivity {
         }
     }
 
-     ***/
-
+    //<editor-fold desc="Click Sound Selecter">
+    //Selects the sound to be played by the icons when clicked
     public void chooseSound()
     {
         Random rand = new Random();
@@ -133,5 +132,6 @@ public class MainMenuActivity extends SettingsMenuActivity {
             mainPlayer = MediaPlayer.create(MainMenuActivity.this, R.raw.click);
         }
     }
+    //</editor-fold>
 }
 
