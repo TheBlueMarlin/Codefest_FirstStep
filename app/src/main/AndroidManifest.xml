@@ -50,7 +50,8 @@
         <activity
             android:name=".ChooseCharacter"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ChooseLearnCat" />
+        <activity android:name=".ChooseLearnCat"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".Game_Matching" />
         <activity android:name=".Game_Banana" />
 

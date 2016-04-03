@@ -11,7 +11,6 @@ public class LessonActivity extends SettingsMenuActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson);
 
-
     }
 
     @Override

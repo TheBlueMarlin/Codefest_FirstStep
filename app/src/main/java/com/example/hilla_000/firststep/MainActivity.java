@@ -64,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
     /*
         Timer class handles the progress bar on the loading screen
      */
@@ -89,9 +88,4 @@ public class MainActivity extends AppCompatActivity {
             loadingBar.setProgress(progress);
         }
     }
-
-    //TODO: code to display lightbulb image
-
-    //TODO: endLoading() method to procede to Hub_Activity
-
 }
