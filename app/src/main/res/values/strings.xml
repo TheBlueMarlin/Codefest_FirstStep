@@ -11,4 +11,5 @@
     <string name="title_activity_tests">TestsActivity</string>
     <string name="title_activity_abclesson1">ABCLesson1Activity</string>
     <string name="title_activity_progress_report">ProgressReport</string>
+    <string name="title_activity_settings_menu">SettingsMenuActivity</string>
 </resources>

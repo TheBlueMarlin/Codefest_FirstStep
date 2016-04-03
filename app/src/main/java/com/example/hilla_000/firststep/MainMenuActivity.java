@@ -23,8 +23,11 @@ public class MainMenuActivity extends SettingsMenuActivity {
         setLessonButtonListener();
         setPlayButtonListener();
         setCharacterButtonListener();
+        setOptionsButtonListener();
     }
 
+
+    //<editor-fold desc="Button Listeners">
     public void setLessonButtonListener(){
         ImageButton button_les = (ImageButton) findViewById(R.id.btn_goto_lesson);
         if (button_les != null) {
@@ -76,25 +79,10 @@ public class MainMenuActivity extends SettingsMenuActivity {
         }
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        if (!continueMusic) {
-            AppWideAudio.pause();
-        }
-    }
-    @Override
-    protected void onResume() {
-        super.onResume();
-        continueMusic = false;
-        AppWideAudio.start(this, R.raw.maintheme);
-    }
-
-    // TODO: get the options button working:
     public void setOptionsButtonListener(){
-        ImageButton button_char = (ImageButton) findViewById(R.id.menuButton);
-        if (button_char != null) {
-            button_char.setOnClickListener(
+        ImageButton menuButton = (ImageButton) findViewById(R.id.menuButton);
+        if (menuButton != null) {
+            menuButton.setOnClickListener(
                     new View.OnClickListener(){
                         @Override
                         public void onClick(View v){
@@ -107,6 +95,24 @@ public class MainMenuActivity extends SettingsMenuActivity {
             );
         }
     }
+    //</editor-fold>
+
+    //<editor-fold desc="Music Control">
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (!continueMusic) {
+            AppWideAudio.pause();
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        continueMusic = false;
+        AppWideAudio.start(this, R.raw.maintheme);
+    }
+    //</editor-fold>
 
     //<editor-fold desc="Click Sound Selecter">
     //Selects the sound to be played by the icons when clicked

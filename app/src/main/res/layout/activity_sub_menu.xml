@@ -47,7 +47,7 @@
         android:id="@+id/backButton"
         android:clickable="true"
         android:background="@null"
-        android:src="@drawable/settings"
+        android:src="@drawable/button_back"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/mainMenuButton" />
 
@@ -55,12 +55,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/muteButton"
-        android:layout_alignTop="@+id/backButton"
         android:clickable="true"
-        android:layout_alignParentBottom="true"
-        android:src="@drawable/settings"
+        android:src="@drawable/icon_play"
         android:background="@null"
-        android:layout_alignEnd="@+id/mainMenuButton" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"

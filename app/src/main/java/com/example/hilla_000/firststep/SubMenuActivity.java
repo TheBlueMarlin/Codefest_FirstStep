@@ -1,5 +1,6 @@
 package com.example.hilla_000.firststep;
 
+import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
@@ -32,9 +33,7 @@ public class SubMenuActivity extends AppCompatActivity {
     }
 
 
-
-    //<editor-fold desc="Button Listeners">
-    //<editor-fold desc="MenuListener">
+    //<editor-fold desc="Button Listeners"
     public void setMainMenuListener(){
         ImageButton MainMenu = (ImageButton) findViewById(R.id.menuButton);
         if (MainMenu != null) {
@@ -51,7 +50,6 @@ public class SubMenuActivity extends AppCompatActivity {
             );
         }
     }
-    //</editor-fold>
 
     public void setSettingsButtonListener(){
         ImageButton settingsButton = (ImageButton) findViewById(R.id.settingsButton);
@@ -96,9 +94,7 @@ public class SubMenuActivity extends AppCompatActivity {
                         public void onClick(View v){
                             chooseSound();
                             mainPlayer.start();
-                            //TODO: backstack execution here:
-                            Intent intent = new Intent(getApplicationContext(), ChooseCharacter.class);
-                            startActivity(intent);
+                            onBackPressed();
                         }
                     }
             );

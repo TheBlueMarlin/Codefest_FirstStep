@@ -50,16 +50,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageButton
-            android:layout_width="59dp"
-            android:layout_height="60dp"
-            android:id="@+id/muteButton"
-            android:background="@null"
-            android:src="@drawable/settings"
-            android:layout_gravity="left|top"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:clickable="true" />
     </FrameLayout>
 
     <ImageButton
