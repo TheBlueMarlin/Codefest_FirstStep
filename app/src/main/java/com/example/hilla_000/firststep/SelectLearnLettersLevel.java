@@ -10,14 +10,14 @@ public class SelectLearnLettersLevel extends SettingsMenuActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_select_learn_level);
+        setContentView(R.layout.activity_select_learn_letters_level);
         button();
         button2();
         //button3();
        // button4();
 }
     public void button(){
-        ImageButton button_choice = (ImageButton) findViewById(R.id.imageButton);
+        ImageButton button_choice = (ImageButton) findViewById(R.id.btn_letters_level_1);
         if (button_choice != null) {
             button_choice.setOnClickListener(
                     new View.OnClickListener() {
@@ -31,7 +31,7 @@ public class SelectLearnLettersLevel extends SettingsMenuActivity {
         }
     }
     public void button2(){
-        ImageButton button_choice2 = (ImageButton) findViewById(R.id.imageButton2);
+        ImageButton button_choice2 = (ImageButton) findViewById(R.id.btn_letters_level_2);
         if (button_choice2 != null) {
             button_choice2.setOnClickListener(
                     new View.OnClickListener() {

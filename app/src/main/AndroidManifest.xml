@@ -30,7 +30,22 @@
             android:name=".ChoosePlayCat"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".SelectLearnLevel"
+            android:name=".SelectLearnLettersLevel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SelectLearnNumbersLevel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NumbersLesson1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NumbersLesson2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LettersLesson1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LettersLesson2Activity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ChooseCharacter"

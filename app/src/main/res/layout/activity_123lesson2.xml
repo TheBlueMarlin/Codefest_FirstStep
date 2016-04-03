@@ -11,7 +11,7 @@
         android:layout_above="@+id/layout_123Lesson2"
         android:layout_centerHorizontal="true"
         android:onClick="sendMessage"
-        android:id="@+id/play_nummber_5"/>
+        android:id="@+id/play_number_5"/>
 
     <GridLayout
         android:layout_width="wrap_content"
@@ -37,7 +37,8 @@
             android:id="@+id/btn_six"
             android:layout_row="0"
             android:layout_column="1"
-            android:src="@drawable/abc_btn_check_to_on_mtrl_015" />
+            android:src="@drawable/abc_btn_check_to_on_mtrl_015"
+            android:onClick="sendMessage"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -45,7 +46,8 @@
             android:id="@+id/btn_seven"
             android:layout_row="1"
             android:layout_column="0"
-            android:src="@drawable/abc_btn_radio_to_on_mtrl_015" />
+            android:src="@drawable/abc_btn_radio_to_on_mtrl_015"
+            android:onClick="sendMessage"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -53,6 +55,7 @@
             android:id="@+id/btn_eight"
             android:layout_row="1"
             android:layout_column="1"
-            android:src="@drawable/abc_ic_search_api_mtrl_alpha" />
+            android:src="@drawable/abc_ic_search_api_mtrl_alpha"
+            android:onClick="sendMessage"/>
     </GridLayout>
 </RelativeLayout>

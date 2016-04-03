@@ -12,13 +12,14 @@ public class NumbersLesson1Activity extends SettingsMenuActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_123lesson1);
+
         correctId = R.id.btn_three;
     }
 
     public void sendMessage(View view) {
         int id = view.getId(); // Button id that was pressed
 
-        if(id == R.id.play_nummber_3)
+        if(id == R.id.play_number_3)
         {
             MediaPlayer.create(getApplicationContext(), R.raw.number_three).start();
         }

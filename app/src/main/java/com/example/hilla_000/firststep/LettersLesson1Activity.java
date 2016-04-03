@@ -14,7 +14,7 @@ public class LettersLesson1Activity extends SettingsMenuActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abclesson1);
-        correctId = R.id.btn_B;
+        correctId = R.id.btn_A;
 
     }
 
@@ -23,12 +23,12 @@ public class LettersLesson1Activity extends SettingsMenuActivity {
 
         if(id == R.id.play_letter_A)
         {
-            MediaPlayer.create(getApplicationContext(), R.raw.correct).start();
+            MediaPlayer.create(getApplicationContext(), R.raw.letter_a).start();
         }
         else if(id == correctId)
         {
             // Play success sound
-            MediaPlayer.create(getApplicationContext(), R.raw.letter_a).start();
+            MediaPlayer.create(getApplicationContext(), R.raw.correct).start();
         }
         else
         {

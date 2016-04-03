@@ -18,7 +18,7 @@ public class NumbersLesson2Activity extends SettingsMenuActivity {
     public void sendMessage(View view) {
         int id = view.getId(); // Button id that was pressed
 
-        if(id == R.id.play_nummber_5)
+        if(id == R.id.play_number_5)
         {
             MediaPlayer.create(getApplicationContext(), R.raw.number_five).start();
         }
