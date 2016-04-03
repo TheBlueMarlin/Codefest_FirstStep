@@ -15,6 +15,7 @@ import java.util.Timer;
 public class SplashActivity extends SettingsMenuActivity {
 
     private static MediaPlayer splashPlayer;
+    private boolean continueMusic;
     public static Context ctx;
 
     Timer loadingTimer;
@@ -53,6 +54,20 @@ public class SplashActivity extends SettingsMenuActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (!continueMusic) {
+            AppWideAudio.pause();
+        }
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        continueMusic = false;
+        AppWideAudio.start(this, R.raw.maintheme);
     }
 
 
