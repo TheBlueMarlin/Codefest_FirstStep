@@ -5,45 +5,48 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class SelectLearnLevel extends SettingsMenuActivity {
+public class SelectLearnNumbersLevel extends SettingsMenuActivity {
+
+    private boolean continueMusic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_select_learn_level);
+        setContentView(R.layout.activity_select_learn_number_level);
         button();
-        //button2();
+        button2();
         //button3();
        // button4();
 }
     public void button(){
-        ImageButton button_choice = (ImageButton) findViewById(R.id.imageButton);
+        ImageButton button_choice = (ImageButton) findViewById(R.id.btn_numbers_level_1);
         if (button_choice != null) {
             button_choice.setOnClickListener(
                     new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Intent intent = new Intent(getApplicationContext(), SelectLearnLevel.class);
+                            Intent intent = new Intent(getApplicationContext(), NumbersLesson1Activity.class);
                             startActivity(intent);
                         }
                     }
             );
         }
     }
-    /*public void button2(){
-        ImageButton button_choice2 = (ImageButton) findViewById(R.id.imageButton2);
+    public void button2(){
+        ImageButton button_choice2 = (ImageButton) findViewById(R.id.btn_numbers_level_2);
         if (button_choice2 != null) {
             button_choice2.setOnClickListener(
                     new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Intent intent = new Intent(getApplicationContext(), SelectLearnLevel.class);
+                            Intent intent = new Intent(getApplicationContext(), NumbersLesson2Activity.class);
                             startActivity(intent);
                         }
                     }
             );
         }
     }
+    /*
     public void button3(){
         ImageButton button_choice3 = (ImageButton) findViewById(R.id.imageButton3);
         if (button_choice3 != null) {
@@ -51,7 +54,7 @@ public class SelectLearnLevel extends SettingsMenuActivity {
                     new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Intent intent = new Intent(getApplicationContext(), SelectLearnLevel.class);
+                            Intent intent = new Intent(getApplicationContext(), LettersLesson3Activity.class);
                             startActivity(intent);
                         }
                     }
@@ -66,11 +69,26 @@ public class SelectLearnLevel extends SettingsMenuActivity {
                     new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Intent intent = new Intent(getApplicationContext(), SelectLearnLevel.class);
+                            Intent intent = new Intent(getApplicationContext(), LettersLesson4Activity.class);
                             startActivity(intent);
                         }
                     }
             );
         }
     }*/
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (!continueMusic) {
+            AppWideAudio.pause();
+        }
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        continueMusic = false;
+        AppWideAudio.start(this, R.raw.maintheme);
+    }
+
 }

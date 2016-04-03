@@ -10,16 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/appname"
-        android:layout_above="@+id/imageLogoView"
-        android:layout_alignParentStart="true" />
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageLogoView"
-        android:src="@drawable/learnbtn"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="85dp" />
 
     <ProgressBar
         android:id="@+id/progressBar"

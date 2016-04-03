@@ -27,17 +27,31 @@
             android:label="@string/title_activity_master"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ChooseLearnCat"
+            android:name=".ChoosePlayCat"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ChoosePlayCat"
+            android:name=".SelectLearnLettersLevel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SelectLearnNumbersLevel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NumbersLesson1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NumbersLesson2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LettersLesson1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LettersLesson2Activity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ChooseCharacter"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".SelectLearnLevel"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ChooseLearnCat"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".Game_Matching" />
         <activity android:name=".Game_Banana" />
 
