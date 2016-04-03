@@ -61,6 +61,7 @@ public class SplashActivity extends SettingsMenuActivity {
 
         public void onFinish(){
             Intent intent = new Intent(ctx, MainMenuActivity.class);
+            startService(intent);
             startActivity(intent);
         }
 

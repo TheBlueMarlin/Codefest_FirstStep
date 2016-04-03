@@ -26,14 +26,21 @@
             android:name=".SettingsMenuActivity"
             android:label="@string/title_activity_master"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ChoosePlayCat"
-            android:label="Learn and Play"/>
-        <activity android:name=".SelectLearnLevel"
-            android:label="Selection"/>
+        <activity
+            android:name=".ChoosePlayCat"
+            android:label="Learn and Play" />
+        <activity
+            android:name=".SelectLearnLevel"
+            android:label="Selection" />
         <activity android:name=".ChooseCharacter" />
         <activity android:name=".ChooseLearnCat" />
         <activity android:name=".Game_Matching" />
         <activity android:name=".Game_Banana" />
+
+        <service
+            android:name=".AppAudio"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
