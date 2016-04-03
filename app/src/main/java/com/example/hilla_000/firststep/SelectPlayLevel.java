@@ -5,6 +5,7 @@ import android.os.Bundle;
 /**
  * Created by jonat on 4/8/2016.
  */
+@Deprecated
 public abstract class SelectPlayLevel extends SettingsMenuActivity {
 
     private boolean continueMusic;

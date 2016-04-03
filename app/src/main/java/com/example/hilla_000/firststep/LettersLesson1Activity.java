@@ -6,6 +6,9 @@ import android.view.View;
 
 import static java.lang.Thread.sleep;
 
+/**
+ * Activity for Letters Category, Lesson 1
+ */
 public class LettersLesson1Activity extends SettingsMenuActivity {
 
     int correctId;
@@ -14,15 +17,18 @@ public class LettersLesson1Activity extends SettingsMenuActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abclesson1);
-        correctId = R.id.btn_A;
-        MediaPlayer.create(getApplicationContext(), R.raw.letter_a).start();
-
-
+        correctId = R.id.btn_A; // hardcode correct button
+        MediaPlayer.create(getApplicationContext(), R.raw.letter_a).start(); // play question clip
     }
 
+    /**
+     * Event handler for all buttons
+     * @param view View of the button pressed
+     */
     public void sendMessage(View view) {
         int id = view.getId(); // Button id that was pressed
 
+        // Replay question clip
         if(id == R.id.play_letter_A)
         {
             MediaPlayer.create(getApplicationContext(), R.raw.letter_a).start();

@@ -2,6 +2,10 @@ package com.example.hilla_000.firststep;
 
 import android.os.Bundle;
 
+/**
+ * Lessons Select Activity for all categories
+ */
+@Deprecated
 public class LessonActivity extends SettingsMenuActivity {
 
     private boolean continueMusic;
@@ -13,6 +17,9 @@ public class LessonActivity extends SettingsMenuActivity {
 
     }
 
+    /**
+     * onPause called when activity pauses, pauses music
+     */
     @Override
     protected void onPause() {
         super.onPause();
@@ -20,6 +27,10 @@ public class LessonActivity extends SettingsMenuActivity {
             AppWideAudio.pause();
         }
     }
+
+    /**
+     * onResume called when activity resumes, resumes music
+     */
     @Override
     protected void onResume() {
         super.onResume();

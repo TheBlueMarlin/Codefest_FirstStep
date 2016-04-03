@@ -8,6 +8,10 @@ import android.widget.ImageButton;
 
 import java.util.Random;
 
+/**
+ * Activity for choosing which Learning category you want to go to
+ * There are Letters, Numbers and in the future Shapes and Colors
+ */
 public class ChooseLearnCat extends SettingsMenuActivity {
 
     private boolean continueMusic;
@@ -21,10 +25,13 @@ public class ChooseLearnCat extends SettingsMenuActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_learn_cat);
+
+        // Setup all the buttons
         button1();
         button2();
     }
 
+    // sSetup event for button 1
     public void button1(){
        ImageButton button_choice = (ImageButton) findViewById(R.id.imageButton_les);
         if (button_choice != null) {
@@ -32,8 +39,8 @@ public class ChooseLearnCat extends SettingsMenuActivity {
                     new View.OnClickListener() {
                        @Override
                         public void onClick(View v) {
-                            chooseSound();
-                            mainPlayer.start();
+                            chooseSound(); // pick sound
+                            mainPlayer.start(); // play sound
                             Intent intent = new Intent(getApplicationContext(), SelectLearnLettersLevel.class);
                             startActivity(intent);
                         }
@@ -42,6 +49,7 @@ public class ChooseLearnCat extends SettingsMenuActivity {
         }
     }
 
+    // Setup event for button 2
     public void button2(){
         ImageButton button_choice = (ImageButton) findViewById(R.id.imageButton2_les);
         if (button_choice != null) {
@@ -49,8 +57,8 @@ public class ChooseLearnCat extends SettingsMenuActivity {
                     new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            chooseSound();
-                            mainPlayer.start();
+                            chooseSound(); // pick sound
+                            mainPlayer.start(); // play sound
                             Intent intent = new Intent(getApplicationContext(), SelectLearnNumbersLevel.class);
                             startActivity(intent);
                         }
@@ -59,6 +67,9 @@ public class ChooseLearnCat extends SettingsMenuActivity {
         }
     }
 
+    /**
+     * Select random clip to play
+     */
     public void chooseSound()
     {
         Random rand = new Random();
