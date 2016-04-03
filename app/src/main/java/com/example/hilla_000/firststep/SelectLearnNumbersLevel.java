@@ -7,6 +7,8 @@ import android.widget.ImageButton;
 
 public class SelectLearnNumbersLevel extends SettingsMenuActivity {
 
+    private boolean continueMusic;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,4 +76,19 @@ public class SelectLearnNumbersLevel extends SettingsMenuActivity {
             );
         }
     }*/
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (!continueMusic) {
+            AppWideAudio.pause();
+        }
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        continueMusic = false;
+        AppWideAudio.start(this, R.raw.maintheme);
+    }
+
 }

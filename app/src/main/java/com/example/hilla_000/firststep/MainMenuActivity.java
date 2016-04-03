@@ -11,14 +11,12 @@ public class MainMenuActivity extends SettingsMenuActivity {
 
     private static MediaPlayer mainPlayer;
 
+    private boolean continueMusic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
 
         mainPlayer = MediaPlayer.create(MainMenuActivity.this, R.raw.blop);
-
-
-
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
@@ -76,6 +74,20 @@ public class MainMenuActivity extends SettingsMenuActivity {
                     }
             );
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (!continueMusic) {
+            AppWideAudio.pause();
+        }
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        continueMusic = false;
+        AppWideAudio.start(this, R.raw.maintheme);
     }
 
     /***    NEEDS TO BE COMPLETED ****/

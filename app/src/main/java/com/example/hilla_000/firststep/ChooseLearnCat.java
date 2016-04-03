@@ -10,6 +10,8 @@ import java.util.Random;
 
 public class ChooseLearnCat extends SettingsMenuActivity {
 
+    private boolean continueMusic;
+
     private static MediaPlayer mainPlayer;
 
     @Override
@@ -78,5 +80,19 @@ public class ChooseLearnCat extends SettingsMenuActivity {
         {
             mainPlayer = MediaPlayer.create(ChooseLearnCat.this, R.raw.click);
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (!continueMusic) {
+            AppWideAudio.pause();
+        }
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        continueMusic = false;
+        AppWideAudio.start(this, R.raw.maintheme);
     }
 }

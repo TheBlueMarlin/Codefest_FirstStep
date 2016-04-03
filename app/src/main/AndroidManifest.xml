@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/fs_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -52,10 +52,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ChooseLearnCat"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Game_Matching"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Game_Banana"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Game_Matching" />
+        <activity android:name=".Game_Banana" />
 
         <service
             android:name=".AppAudio"
