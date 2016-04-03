@@ -11,6 +11,8 @@ import android.view.View;
 
 public class SettingsMenuActivity extends AppCompatActivity {
 
+    private boolean continueMusic;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,5 +44,4 @@ public class SettingsMenuActivity extends AppCompatActivity {
         AppWideAudio.start(this, R.raw.maintheme);
     }
 
-*/
 }
