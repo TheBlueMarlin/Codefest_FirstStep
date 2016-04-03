@@ -4,10 +4,12 @@ import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.IBinder;
+import android.util.Log;
 
 public class AppAudio extends Service {
 
     private MediaPlayer player = new MediaPlayer();
+    private static final String TAG = "AppAudio";
 
     public AppAudio() {
     }
@@ -20,10 +22,11 @@ public class AppAudio extends Service {
     public void onCreate() {
         super.onCreate();
         player = MediaPlayer.create(this, R.raw.maintheme); //TODO: Bind audio file here
-        player.setLooping(true); //set looping
-        player.setVolume(100, 100);
         player.start();
+        player.setVolume(100, 100);
         player.setLooping(true);
+
+        Log.i(TAG, "Service audio on Create");
     }
 
     public void onDestroy(){

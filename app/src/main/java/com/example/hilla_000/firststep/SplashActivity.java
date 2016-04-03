@@ -6,6 +6,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ProgressBar;
@@ -17,12 +18,20 @@ public class SplashActivity extends SettingsMenuActivity {
     private static MediaPlayer splashPlayer;
     public static Context ctx;
 
+    private static final String TAG = "SplashActivity";
+
     Timer loadingTimer;
     ProgressBar loadingBar;
 
     long duration = 3000;
     long interval = 100;
 
+    @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
+        Log.i(TAG, "splash onDestroy");
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,8 +73,9 @@ public class SplashActivity extends SettingsMenuActivity {
         public Timer(long startTime, long interval) {super(startTime, interval);}
 
         public void onFinish(){
-            Intent intent = new Intent(ctx, MainMenuActivity.class);
+            Intent intent = new Intent(ctx, AppAudio.class);
             startService(intent);
+            intent = new Intent(ctx, MainMenuActivity.class);
             startActivity(intent);
         }
 
