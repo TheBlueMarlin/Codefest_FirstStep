@@ -2,6 +2,7 @@ package com.example.hilla_000.firststep;
 
 import android.content.Context;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.widget.Toolbar;
@@ -13,6 +14,7 @@ import java.util.Timer;
 
 public class SplashActivity extends SettingsMenuActivity {
 
+    private static MediaPlayer splashPlayer;
     public static Context ctx;
 
     Timer loadingTimer;
@@ -32,6 +34,8 @@ public class SplashActivity extends SettingsMenuActivity {
         loadingBar = (ProgressBar)findViewById(R.id.progressBar);
 
         loadingTimer.start();
+        splashPlayer = MediaPlayer.create(SplashActivity.this, R.raw.splashsound);
+        splashPlayer.start();
     }
 
     @Override
