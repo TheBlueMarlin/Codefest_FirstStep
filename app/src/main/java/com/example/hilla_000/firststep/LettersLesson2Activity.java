@@ -13,6 +13,7 @@ public class LettersLesson2Activity extends SettingsMenuActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abclesson2);
         correctId = R.id.btn_E;
+        MediaPlayer.create(getApplicationContext(), R.raw.letter_e).start();
     }
 
     public void sendMessage(View view) {

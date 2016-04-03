@@ -15,6 +15,8 @@ public class LettersLesson1Activity extends SettingsMenuActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abclesson1);
         correctId = R.id.btn_A;
+        MediaPlayer.create(getApplicationContext(), R.raw.letter_a).start();
+
 
     }
 
