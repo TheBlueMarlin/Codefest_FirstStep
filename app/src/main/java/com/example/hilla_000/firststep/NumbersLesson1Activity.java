@@ -14,6 +14,7 @@ public class NumbersLesson1Activity extends SettingsMenuActivity {
         setContentView(R.layout.activity_123lesson1);
 
         correctId = R.id.btn_three;
+        MediaPlayer.create(getApplicationContext(), R.raw.number_three).start();
     }
 
     public void sendMessage(View view) {
