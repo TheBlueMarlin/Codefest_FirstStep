@@ -14,8 +14,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="&apos;Lil Rocky"
-        android:id="@+id/textView2"
+        android:text="Lil Rocky"
+        android:id="@+id/displayText"
         android:layout_marginTop="71dp"
         android:textSize="40dp"
         android:layout_alignParentTop="true"
@@ -24,16 +24,16 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
+        android:id="@+id/characterDisplay"
         android:src="@drawable/drop4"
-        android:layout_below="@+id/textView2"
-        android:layout_alignStart="@+id/textView2"
-        android:background="@null"/>
+        android:background="@null"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
+        android:layout_below="@+id/characterDisplay"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="65dp"
         android:background="@null">
@@ -41,14 +41,14 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageButton13"
+            android:id="@+id/rockAvatarButton"
             android:src="@drawable/drop_icon4_mini"
             android:background="@null"/>
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageButton14"
+            android:id="@+id/airAvatarButton"
             android:src="@drawable/drop_icon5_mini"
             android:background="@null"/>
 
