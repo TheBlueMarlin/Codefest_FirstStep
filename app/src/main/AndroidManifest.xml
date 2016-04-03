@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/fs_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -27,15 +27,17 @@
             android:label="@string/title_activity_master"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ChoosePlayCat"
+            android:name=".ChooseLearnCat"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".SelectLearnLevel"
+            android:name=".ChoosePlayCat"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ChooseCharacter"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ChooseLearnCat" />
+        <activity
+            android:name=".SelectLearnLevel"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Game_Matching" />
         <activity android:name=".Game_Banana" />
 
