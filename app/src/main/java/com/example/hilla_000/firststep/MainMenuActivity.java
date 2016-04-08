@@ -2,7 +2,6 @@ package com.example.hilla_000.firststep;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
 import android.view.View;
 import android.widget.ImageButton;
 
@@ -24,7 +23,7 @@ public class MainMenuActivity extends SettingsMenuActivity {
                     new View.OnClickListener(){
                         @Override
                         public void onClick(View v){
-                            Intent intent = new Intent(getApplicationContext(), LearnPlayActivity.class);
+                            Intent intent = new Intent(getApplicationContext(), SelectLearnActivity.class);
                             intent.putExtra("id", v.getId());
                             startActivity(intent);
                         }
@@ -40,7 +39,7 @@ public class MainMenuActivity extends SettingsMenuActivity {
                     new View.OnClickListener(){
                         @Override
                         public void onClick(View v){
-                            Intent intent = new Intent(getApplicationContext(), LearnPlayActivity.class);
+                            Intent intent = new Intent(getApplicationContext(), SelectPlayActivity.class);
                             intent.putExtra("id", v.getId());
                             startActivity(intent);
                         }

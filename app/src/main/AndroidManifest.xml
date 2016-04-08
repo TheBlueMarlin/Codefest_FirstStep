@@ -20,14 +20,16 @@
         </activity>
         <activity
             android:name=".MainMenuActivity"
-            android:label="@string/title_activity_menu"
+            android:label="Main Menu"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SettingsMenuActivity"
             android:label="@string/title_activity_master"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".LearnPlayActivity" />
-        <activity android:name=".SelectionActivity" />
+        <activity android:name=".PlayActivity"
+            android:label="Learn and Play"/>
+        <activity android:name=".SelectLearnActivity"
+            android:label="Selection"/>
         <activity android:name=".AvatarActivity" />
         <activity android:name=".LessonsActivity" />
         <activity android:name=".MatchingGameActivity" />

@@ -5,37 +5,29 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class LearnPlayActivity extends SettingsMenuActivity {
-
+/**
+ * Created by jonat on 4/8/2016.
+ */
+public class LearnActivity extends SettingsMenuActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        int idNum = getIntent().getIntExtra("id", 0);
-
-        if(idNum == R.id.btn_goto_lesson)
-        {
-            setContentView(R.layout.learn_topic_selection);
-        }
-        else{
-            setContentView(R.layout.play_topic_selection);
-        }
+        setContentView(R.layout.learn_topic_selection);
         setActivityLayout();
     }
     public void setActivityLayout(){
-        ImageButton button_choice = (ImageButton) findViewById(R.id.lesimageButton);
+        ImageButton button_choice = (ImageButton) findViewById(R.id.imageButton);
         if (button_choice != null) {
             button_choice.setOnClickListener(
                     new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Intent intent = new Intent(getApplicationContext(), SelectionActivity.class);
-                            intent.putExtra("id", v.getId());
+                            Intent intent = new Intent(getApplicationContext(), SelectLearnActivity.class);
                             startActivity(intent);
                         }
                     }
             );
         }
     }
-
 }
