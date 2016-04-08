@@ -24,7 +24,8 @@ public class MenuActivity extends SettingsMenuActivity {
                     new View.OnClickListener(){
                         @Override
                         public void onClick(View v){
-                            Intent intent = new Intent(MenuActivity.this, LessonsActivity.class);
+                            Intent intent = new Intent(getApplicationContext(), LearnPlayActivity.class);
+                            intent.putExtra("id", v.getId());
                             startActivity(intent);
                         }
                     }
@@ -39,7 +40,8 @@ public class MenuActivity extends SettingsMenuActivity {
                     new View.OnClickListener(){
                         @Override
                         public void onClick(View v){
-                            Intent intent = new Intent(MenuActivity.this, LearnPlayActivity.class);
+                            Intent intent = new Intent(getApplicationContext(), LearnPlayActivity.class);
+                            intent.putExtra("id", v.getId());
                             startActivity(intent);
                         }
                     }
@@ -54,7 +56,7 @@ public class MenuActivity extends SettingsMenuActivity {
                     new View.OnClickListener(){
                         @Override
                         public void onClick(View v){
-                            Intent intent = new Intent(MenuActivity.this, AvatarActivity.class);
+                            Intent intent = new Intent(getApplicationContext(), AvatarActivity.class);
                             startActivity(intent);
                         }
                     }

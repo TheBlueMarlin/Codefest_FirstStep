@@ -6,9 +6,15 @@ public class LearnPlayActivity extends SettingsMenuActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_avatar);
-        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
+        int idNum = getIntent().getIntExtra("id", 0);
+        if(idNum == R.id.btn_goto_lesson)
+        {
+            setContentView(R.layout.learn_layout);
+        }
+        else{
+            setContentView(R.layout.play_layout);
+        }
     }
 }

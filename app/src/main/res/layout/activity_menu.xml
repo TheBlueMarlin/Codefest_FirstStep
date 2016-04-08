@@ -9,19 +9,22 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:id="@+id/btn_goto_lesson"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/learnbtn"/>
 
     <ImageButton
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:id="@+id/btn_goto_play"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/playbtn"/>
 
     <ImageButton
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:id="@+id/btn_goto_char"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/charbtn"/>
 
 
 </LinearLayout>
