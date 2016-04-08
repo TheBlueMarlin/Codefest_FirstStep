@@ -5,29 +5,28 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-/**
- * Created by jonat on 4/8/2016.
- */
-public class LearnActivity extends SettingsMenuActivity{
+public class ChoosePlayCat extends SettingsMenuActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.learn_topic_selection);
+        setContentView(R.layout.activity_choose_play_cat);
         setActivityLayout();
     }
     public void setActivityLayout(){
-        ImageButton button_choice = (ImageButton) findViewById(R.id.imageButton);
+        ImageButton button_choice = (ImageButton) findViewById(R.id.imageButton_play);
         if (button_choice != null) {
             button_choice.setOnClickListener(
                     new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Intent intent = new Intent(getApplicationContext(), SelectLearnActivity.class);
+                            Intent intent = new Intent(getApplicationContext(), SelectPlayLevel.class);
                             startActivity(intent);
                         }
                     }
             );
         }
     }
+
 }

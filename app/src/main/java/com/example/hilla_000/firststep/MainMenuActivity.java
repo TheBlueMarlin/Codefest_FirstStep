@@ -10,21 +10,20 @@ public class MainMenuActivity extends SettingsMenuActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
+        setContentView(R.layout.activity_main_menu);
         setLessonButtonListener();
         setPlayButtonListener();
         setCharacterButtonListener();
     }
 
     public void setLessonButtonListener(){
-        ImageButton button_lrn = (ImageButton) findViewById(R.id.btn_goto_lesson);
-        if (button_lrn != null) {
-            button_lrn.setOnClickListener(
+        ImageButton button_les = (ImageButton) findViewById(R.id.btn_goto_lesson);
+        if (button_les != null) {
+            button_les.setOnClickListener(
                     new View.OnClickListener(){
                         @Override
                         public void onClick(View v){
-                            Intent intent = new Intent(getApplicationContext(), SelectLearnActivity.class);
-                            intent.putExtra("id", v.getId());
+                            Intent intent = new Intent(getApplicationContext(), ChooseLearnCat.class);
                             startActivity(intent);
                         }
                     }
@@ -39,8 +38,7 @@ public class MainMenuActivity extends SettingsMenuActivity {
                     new View.OnClickListener(){
                         @Override
                         public void onClick(View v){
-                            Intent intent = new Intent(getApplicationContext(), SelectPlayActivity.class);
-                            intent.putExtra("id", v.getId());
+                            Intent intent = new Intent(getApplicationContext(), ChoosePlayCat.class);
                             startActivity(intent);
                         }
                     }
@@ -55,7 +53,7 @@ public class MainMenuActivity extends SettingsMenuActivity {
                     new View.OnClickListener(){
                         @Override
                         public void onClick(View v){
-                            Intent intent = new Intent(getApplicationContext(), AvatarActivity.class);
+                            Intent intent = new Intent(getApplicationContext(), ChooseCharacter.class);
                             startActivity(intent);
                         }
                     }

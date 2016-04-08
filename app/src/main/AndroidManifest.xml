@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -26,14 +26,14 @@
             android:name=".SettingsMenuActivity"
             android:label="@string/title_activity_master"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".PlayActivity"
+        <activity android:name=".ChoosePlayCat"
             android:label="Learn and Play"/>
-        <activity android:name=".SelectLearnActivity"
+        <activity android:name=".SelectLearnLevel"
             android:label="Selection"/>
-        <activity android:name=".AvatarActivity" />
-        <activity android:name=".LessonsActivity" />
-        <activity android:name=".MatchingGameActivity" />
-        <activity android:name=".BananaGameActivity"></activity>
+        <activity android:name=".ChooseCharacter" />
+        <activity android:name=".ChooseLearnCat" />
+        <activity android:name=".Game_Matching" />
+        <activity android:name=".Game_Banana"></activity>
     </application>
 
 </manifest>

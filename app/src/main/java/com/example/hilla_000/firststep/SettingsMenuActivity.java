@@ -10,7 +10,7 @@ public class SettingsMenuActivity extends AppCompatActivity {
     /*@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.splash);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }*/ //Can we eliminate the main class?
