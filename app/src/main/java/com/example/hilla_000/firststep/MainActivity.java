@@ -3,7 +3,7 @@ package com.example.hilla_000.firststep;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
-public class MainActivity extends MasterActivity {
+public class MainActivity extends SettingsMenuActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

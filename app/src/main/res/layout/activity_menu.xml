@@ -5,29 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="wrap_content"
+    <ImageButton
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Lessons"
         android:id="@+id/btn_goto_lesson"
-        android:layout_gravity="center_horizontal"
-        android:onClick="select_learn_play_avatar" />
+        android:layout_gravity="center_horizontal"/>
 
-    <Button
-        android:layout_width="wrap_content"
+    <ImageButton
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Tests"
-        android:id="@+id/btn_goto_tests"
-        android:layout_gravity="center_horizontal"
-        android:onClick="select_learn_play_avatar" />
+        android:id="@+id/btn_goto_play"
+        android:layout_gravity="center_horizontal"/>
 
-    <Button
-        android:layout_width="wrap_content"
+    <ImageButton
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Games"
-        android:id="@+id/btn_goto_games"
-        android:layout_gravity="center_horizontal"
-        android:onClick="select_learn_play_avatar" />
+        android:id="@+id/btn_goto_char"
+        android:layout_gravity="center_horizontal"/>
 
 
 </LinearLayout>

@@ -1,10 +1,9 @@
 package com.example.hilla_000.firststep;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
-public class MatchingActivity extends MasterActivity {
+public class MatchingActivity extends SettingsMenuActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
