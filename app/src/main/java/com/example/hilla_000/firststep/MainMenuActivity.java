@@ -6,7 +6,7 @@ import android.widget.Button;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class MenuActivity extends SettingsMenuActivity {
+public class MainMenuActivity extends SettingsMenuActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
