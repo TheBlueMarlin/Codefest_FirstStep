@@ -33,7 +33,14 @@
         <activity android:name=".ChooseCharacter" />
         <activity android:name=".ChooseLearnCat" />
         <activity android:name=".Game_Matching" />
-        <activity android:name=".Game_Banana" />
+        <activity
+            android:name=".Game_Banana"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Game_Asteroid"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

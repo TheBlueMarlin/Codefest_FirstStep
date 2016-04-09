@@ -5,7 +5,7 @@ import android.os.Bundle;
 /**
  * Created by jonat on 4/8/2016.
  */
-public class SelectPlayLevel extends SettingsMenuActivity {
+public abstract class SelectPlayLevel extends SettingsMenuActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

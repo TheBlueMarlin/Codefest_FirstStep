@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#31dab5">
+    android:background="@drawable/splash">
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -19,7 +19,7 @@
         android:id="@+id/imageLogoView"
         android:layout_centerHorizontal="false"
         android:layout_below="@+id/imageTextLogo"
-        android:src="@drawable/learnbtn"
+        android:src="@drawable/playbtn"
         android:layout_marginBottom="50dp"/>
 
     <ProgressBar

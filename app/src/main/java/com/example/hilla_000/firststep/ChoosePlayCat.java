@@ -12,12 +12,12 @@ public class ChoosePlayCat extends SettingsMenuActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_play_cat);
-        openGame1();
-        openGame2();
-        //openGame3();
+        setGame1ButtonListener();
+        setGame2ButtonListener();
+        setGame3ButtonListener();
         //openGame4();
     }
-    public void openGame1(){
+    public void setGame1ButtonListener(){
         ImageButton button_choice = (ImageButton) findViewById(R.id.imageButton_play);
         if (button_choice != null) {
             button_choice.setOnClickListener(
@@ -32,7 +32,7 @@ public class ChoosePlayCat extends SettingsMenuActivity {
         }
     }
 
-    public void openGame2(){
+    public void setGame2ButtonListener(){
         ImageButton button_choice = (ImageButton) findViewById(R.id.imageButton2_play);
         if (button_choice != null) {
             button_choice.setOnClickListener(
@@ -47,14 +47,14 @@ public class ChoosePlayCat extends SettingsMenuActivity {
         }
     }
 
-    public void openGame3(){
+    public void setGame3ButtonListener(){
         ImageButton button_choice = (ImageButton) findViewById(R.id.imageButton3_play);
         if (button_choice != null) {
             button_choice.setOnClickListener(
                     new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                             Intent intent = new Intent(getApplicationContext(), Game_Banana.class);
+                             Intent intent = new Intent(getApplicationContext(), Game_Asteroid.class);
                              //Uncomment and change destination.
                             startActivity(intent);
                         }
@@ -78,5 +78,4 @@ public class ChoosePlayCat extends SettingsMenuActivity {
             );
         }
     }
-
 }
