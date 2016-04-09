@@ -28,7 +28,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageButton"
+            android:id="@+id/btn_numbers_level_1"
             android:layout_row="0"
             android:layout_column="0"
             android:src="@drawable/abc_btn_check_to_on_mtrl_000"
@@ -37,7 +37,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageButton2"
+            android:id="@+id/btn_numbers_level_2"
             android:layout_row="0"
             android:layout_column="1"
             android:src="@drawable/abc_btn_check_to_on_mtrl_015" />
@@ -45,7 +45,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageButton3"
+            android:id="@+id/btn_numbers_level_3"
             android:layout_row="0"
             android:layout_column="2"
             android:src="@drawable/abc_btn_radio_to_on_mtrl_015" />
@@ -53,7 +53,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageButton4"
+            android:id="@+id/btn_numbers_level_4"
             android:layout_row="0"
             android:layout_column="3"
             android:src="@drawable/abc_ic_search_api_mtrl_alpha" />
@@ -61,7 +61,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageButton5"
+            android:id="@+id/btn_numbers_level_5"
             android:layout_row="1"
             android:layout_column="0"
             android:src="@drawable/abc_ic_star_black_16dp" />
@@ -69,7 +69,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageButton6"
+            android:id="@+id/btn_numbers_level_6"
             android:layout_row="1"
             android:layout_column="1"
             android:src="@drawable/abc_ic_menu_paste_mtrl_am_alpha" />
@@ -77,7 +77,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageButton7"
+            android:id="@+id/btn_numbers_level_7"
             android:layout_row="1"
             android:layout_column="2"
             android:src="@drawable/abc_ic_clear_mtrl_alpha" />
@@ -85,7 +85,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageButton8"
+            android:id="@+id/btn_numbers_level_8"
             android:layout_row="1"
             android:layout_column="3"
             android:src="@drawable/abc_btn_rating_star_off_mtrl_alpha" />
@@ -93,7 +93,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageButton9"
+            android:id="@+id/btn_numbers_level_9"
             android:layout_row="2"
             android:layout_column="0"
             android:src="@drawable/abc_btn_radio_to_on_mtrl_015" />
@@ -101,7 +101,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageButton10"
+            android:id="@+id/btn_numbers_level_10"
             android:layout_row="2"
             android:layout_column="1"
             android:src="@drawable/abc_btn_check_to_on_mtrl_000" />
@@ -109,7 +109,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageButton11"
+            android:id="@+id/btn_numbers_level_11"
             android:layout_row="2"
             android:layout_column="2"
             android:src="@drawable/abc_btn_rating_star_off_mtrl_alpha" />

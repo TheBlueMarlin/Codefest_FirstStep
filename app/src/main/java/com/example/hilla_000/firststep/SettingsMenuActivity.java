@@ -8,7 +8,9 @@ import android.view.MenuItem;
 
 public class SettingsMenuActivity extends AppCompatActivity {
 
-    @Override
+    private boolean continueMusic;
+
+    /*@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
@@ -42,4 +44,20 @@ public class SettingsMenuActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (!continueMusic) {
+            AppWideAudio.pause();
+        }
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        continueMusic = false;
+        AppWideAudio.start(this, R.raw.maintheme);
+    }
+
+
 }

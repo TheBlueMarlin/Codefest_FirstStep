@@ -6,21 +6,13 @@
     android:layout_height="match_parent"
     android:background="@drawable/splash">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageTextLogo"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:src = "@drawable/charbtn"/>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/imageLogoView"
-        android:layout_centerHorizontal="false"
-        android:layout_below="@+id/imageTextLogo"
-        android:src="@drawable/playbtn"
-        android:layout_marginBottom="50dp"/>
+        android:src="@drawable/appname"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="85dp" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -33,4 +25,5 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
 </RelativeLayout>
