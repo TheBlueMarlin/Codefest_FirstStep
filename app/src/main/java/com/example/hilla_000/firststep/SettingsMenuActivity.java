@@ -10,12 +10,12 @@ public class SettingsMenuActivity extends AppCompatActivity {
 
     private boolean continueMusic;
 
-    /*@Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
         
-    } //Can we eliminate the activity_game_simon class?
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
