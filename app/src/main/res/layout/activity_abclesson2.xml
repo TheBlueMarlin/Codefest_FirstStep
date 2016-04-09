@@ -2,16 +2,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/rootContainer"
+    android:background="@drawable/splash"
     >
-    <ImageButton
+    <ZoomButton
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/abc_btn_check_to_on_mtrl_000"
+        android:src="@drawable/main_play"
         android:layout_above="@+id/layout_ABCLesson2"
         android:layout_centerHorizontal="true"
         android:onClick="sendMessage"
-        android:id="@+id/play_letter_E"/>
+        android:id="@+id/play_letter_E"
+        android:layout_margin="12dp" />
 
     <GridLayout
         android:layout_width="wrap_content"
@@ -28,8 +29,10 @@
             android:id="@+id/btn_E"
             android:layout_row="0"
             android:layout_column="0"
-            android:src="@drawable/abc_btn_check_to_on_mtrl_000"
-            android:onClick="sendMessage" />
+            android:src="@drawable/icon_eupper"
+            android:onClick="sendMessage"
+            android:layout_margin="5dp"
+            android:background="@null" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -37,8 +40,10 @@
             android:id="@+id/btn_F"
             android:layout_row="0"
             android:layout_column="1"
-            android:src="@drawable/abc_btn_check_to_on_mtrl_015"
-            android:onClick="sendMessage"/>
+            android:src="@drawable/icon_fupper"
+            android:onClick="sendMessage"
+            android:layout_margin="5dp"
+            android:background="@null" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -46,8 +51,10 @@
             android:id="@+id/btn_G"
             android:layout_row="1"
             android:layout_column="0"
-            android:src="@drawable/abc_btn_radio_to_on_mtrl_015"
-            android:onClick="sendMessage"/>
+            android:src="@drawable/icon_blower"
+            android:onClick="sendMessage"
+            android:layout_margin="5dp"
+            android:background="@null" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -55,7 +62,9 @@
             android:id="@+id/btn_H"
             android:layout_row="1"
             android:layout_column="1"
-            android:src="@drawable/abc_ic_search_api_mtrl_alpha"
-            android:onClick="sendMessage"/>
+            android:src="@drawable/icon_alower"
+            android:onClick="sendMessage"
+            android:layout_margin="5dp"
+            android:background="@null" />
     </GridLayout>
 </RelativeLayout>

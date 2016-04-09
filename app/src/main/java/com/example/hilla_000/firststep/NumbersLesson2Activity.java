@@ -13,6 +13,7 @@ public class NumbersLesson2Activity extends SettingsMenuActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_123lesson2);
         correctId = R.id.btn_five;
+        MediaPlayer.create(getApplicationContext(), R.raw.number_five).start();
     }
 
     public void sendMessage(View view) {

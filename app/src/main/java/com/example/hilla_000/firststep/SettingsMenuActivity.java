@@ -59,5 +59,5 @@ public class SettingsMenuActivity extends AppCompatActivity {
         AppWideAudio.start(this, R.raw.maintheme);
     }
 
-
+*/
 }
