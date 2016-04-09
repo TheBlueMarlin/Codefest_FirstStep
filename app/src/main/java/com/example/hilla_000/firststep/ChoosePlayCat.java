@@ -17,15 +17,17 @@ public class ChoosePlayCat extends SettingsMenuActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+        super.onCreate(savedInstanceState);
+
         mainPlayer = MediaPlayer.create(ChoosePlayCat.this, R.raw.blop);
 
-        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_play_cat);
         setGame1ButtonListener();
         setGame2ButtonListener();
-        setGame3ButtonListener();
+        //setGame3ButtonListener();
         //openGame4();
     }
+
     public void setGame1ButtonListener(){
         ImageButton button_choice = (ImageButton) findViewById(R.id.imageButton_play);
         if (button_choice != null) {
@@ -52,7 +54,7 @@ public class ChoosePlayCat extends SettingsMenuActivity {
                         public void onClick(View v) {
                             chooseSound();
                             mainPlayer.start();
-                            Intent intent = new Intent(getApplicationContext(), Game_Matching.class);
+                            Intent intent = new Intent(getApplicationContext(), Game_Asteroid.class);
                             startActivity(intent);
                         }
                     }
@@ -60,41 +62,41 @@ public class ChoosePlayCat extends SettingsMenuActivity {
         }
     }
 
-    public void setGame3ButtonListener(){
-        ImageButton button_choice = (ImageButton) findViewById(R.id.imageButton3_play);
-        if (button_choice != null) {
-            button_choice.setOnClickListener(
-                    new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            chooseSound();
-                            mainPlayer.start();
-                             Intent intent = new Intent(getApplicationContext(), Game_Banana.class);
-                             //Uncomment and change destination.
-                            startActivity(intent);
-                        }
-                    }
-            );
-        }
-    }
-
-    public void openGame4(){
-        ImageButton button_choice = (ImageButton) findViewById(R.id.imageButton4_play);
-        if (button_choice != null) {
-            button_choice.setOnClickListener(
-                    new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            chooseSound();
-                            mainPlayer.start();
-                            Intent intent = new Intent(getApplicationContext(), Game_Matching.class);
-                            //Uncomment and change destination.
-                            startActivity(intent);
-                        }
-                    }
-            );
-        }
-    }
+//    public void setGame3ButtonListener(){
+//        ImageButton button_choice = (ImageButton) findViewById(R.id.imageButton3_play);
+//        if (button_choice != null) {
+//            button_choice.setOnClickListener(
+//                    new View.OnClickListener() {
+//                        @Override
+//                        public void onClick(View v) {
+//                            chooseSound();
+//                            mainPlayer.start();
+//                             Intent intent = new Intent(getApplicationContext(), Game_Banana.class);
+//                             //Uncomment and change destination.
+//                            startActivity(intent);
+//                        }
+//                    }
+//            );
+//        }
+//    }
+//
+//    public void openGame4(){
+//        ImageButton button_choice = (ImageButton) findViewById(R.id.imageButton4_play);
+//        if (button_choice != null) {
+//            button_choice.setOnClickListener(
+//                    new View.OnClickListener() {
+//                        @Override
+//                        public void onClick(View v) {
+//                            chooseSound();
+//                            mainPlayer.start();
+//                            Intent intent = new Intent(getApplicationContext(), Game_Matching.class);
+//                            //Uncomment and change destination.
+//                            startActivity(intent);
+//                        }
+//                    }
+//            );
+//        }
+//    }
 
 
 
@@ -107,19 +109,19 @@ public class ChoosePlayCat extends SettingsMenuActivity {
 
         if(number == 1)
         {
-            mainPlayer = MediaPlayer.create(ChoosePlayCat.this, R.raw.blop);
+            mainPlayer = MediaPlayer.create(getApplicationContext(), R.raw.blop);
         }
         else if( number == 2)
         {
-            mainPlayer = MediaPlayer.create(ChoosePlayCat.this, R.raw.pop);
+            mainPlayer = MediaPlayer.create(getApplicationContext(), R.raw.pop);
         }
         else if(number == 3)
         {
-            mainPlayer = MediaPlayer.create(ChoosePlayCat.this, R.raw.tick);
+            mainPlayer = MediaPlayer.create(getApplicationContext(), R.raw.tick);
         }
         else if(number == 4)
         {
-            mainPlayer = MediaPlayer.create(ChoosePlayCat.this, R.raw.click);
+            mainPlayer = MediaPlayer.create(getApplicationContext(), R.raw.click);
         }
     }
 

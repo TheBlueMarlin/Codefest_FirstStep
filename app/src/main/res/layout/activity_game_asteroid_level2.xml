@@ -15,7 +15,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/n_four"
+            android:src="@drawable/n_two"
             android:background="@null"
             android:id="@+id/num1"
             android:paddingRight="30dp"
@@ -24,7 +24,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/n_eight"
+            android:src="@drawable/n_five"
             android:background="@null"
             android:id="@+id/num2"
             android:paddingLeft="5dp"
@@ -33,7 +33,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/n_one"
+            android:src="@drawable/n_seven"
             android:background="@null"
             android:id="@+id/num3"
             android:paddingLeft="10dp" />

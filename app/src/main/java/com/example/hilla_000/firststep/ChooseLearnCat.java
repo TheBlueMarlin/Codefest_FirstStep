@@ -17,10 +17,9 @@ public class ChooseLearnCat extends SettingsMenuActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        mainPlayer = MediaPlayer.create(ChooseLearnCat.this, R.raw.blop);
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_learn_cat);
+        mainPlayer = MediaPlayer.create(ChooseLearnCat.this, R.raw.blop);
         button1();
         button2();
     }

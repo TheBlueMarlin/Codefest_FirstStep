@@ -20,7 +20,7 @@ public class Game_Asteroid_Level2 extends SettingsMenuActivity{
 
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game_asteroid);
+        setContentView(R.layout.activity_game_asteroid_level2);
         result = (TextView) findViewById(R.id.textAnswer);
         mainPlayer = MediaPlayer.create(getApplicationContext(), R.raw.incorrect);
 
@@ -54,7 +54,9 @@ public class Game_Asteroid_Level2 extends SettingsMenuActivity{
                     new View.OnClickListener(){
                         @Override
                         public void onClick(View v){
-                            result.setText("Correct");
+                            chooseSound();
+                            mainPlayer.start();
+                            result.setText("Incorrect");
                             result.setTextSize(75);
                         }
                     }
@@ -69,9 +71,7 @@ public class Game_Asteroid_Level2 extends SettingsMenuActivity{
                     new View.OnClickListener(){
                         @Override
                         public void onClick(View v){
-                            chooseSound();
-                            mainPlayer.start();
-                            result.setText("Incorrect");
+                            result.setText("Correct");
                             result.setTextSize(75);
                         }
                     }

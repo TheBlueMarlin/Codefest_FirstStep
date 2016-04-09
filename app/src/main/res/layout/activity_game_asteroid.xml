@@ -5,38 +5,41 @@
     android:background="@drawable/wallpaper_space">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="200dp"
-        android:layout_marginTop="10dp"
-        android:id="@+id/linearLayout">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_above="@+id/playerButton"
+        android:layout_centerHorizontal="true">
 
-        <Button
+        <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button" />
+            android:src="@drawable/n_four"
+            android:background="@null"
+            android:id="@+id/num1"
+            android:paddingRight="30dp"
+            android:paddingLeft="5dp" />
 
-        <Button
+        <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button2" />
+            android:src="@drawable/n_eight"
+            android:background="@null"
+            android:id="@+id/num2"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
 
-        <Button
+        <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button3" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button4" />
+            android:src="@drawable/n_one"
+            android:background="@null"
+            android:id="@+id/num3"
+            android:paddingLeft="10dp" />
 
     </LinearLayout>
+
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,5 +48,16 @@
         android:src="@drawable/rocket"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       Pick The    Largest Number"
+        android:id="@+id/textAnswer"
+        android:textSize="50dp"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp" />
 
 </RelativeLayout>
